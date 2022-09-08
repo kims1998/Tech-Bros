@@ -43,8 +43,8 @@ const signupFormHandle = async (e) => {
     };
 
     //validate password length
-    if(password.length < 8){
-        alert("Password must be at least 8 characters long!");
+    if(password.length < 6){
+        alert("Password must be at least 6 characters or more.");
         return;
     };
 

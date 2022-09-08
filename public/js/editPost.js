@@ -1,6 +1,6 @@
+const post = document.getElementById("post");
 const deleteBtn = document.getElementById("delete");
 const updateForm = document.getElementById("update-form");
-const post = document.getElementById("post");
 
 const deletePost = async (e) =>{
     e.preventDefault();
@@ -35,7 +35,7 @@ const updatePost = async (e) => {
     if(response.ok){
         document.location.replace("/dashboard");
     } else {
-        alert("Failed to update the post!");
+        alert("Failed to update the post, please try again.");
     };
 };
 

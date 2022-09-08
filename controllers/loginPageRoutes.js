@@ -8,8 +8,8 @@ router.get("/", async (req, res) => {
             return;
         };
         res.render("loginPage");
-    } catch (err) {
-        res.status(500).json(err, "An error occurred.");
+    } catch (error) {
+        res.status(500).json(error, "An error has occurred.");
     };
 });
 
